@@ -8,8 +8,6 @@ To containerize your application, you can use Docker. Create a Dockerfile in the
 Dockerfile
 Copy code
 # Dockerfile
-FROM node:14
-
 WORKDIR /todoapp
 
 COPY package*.json ./
@@ -33,5 +31,3 @@ bash
 Copy code
 docker run -p 3000:3000 your-image-name
 Access the app in your browser at http://localhost:3000.
-
-These are just simplified examples, and the actual implementation may vary based on your specific requirements and technologies used in your stack. Adjustments and enhancements are likely needed.
